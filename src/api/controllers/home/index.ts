@@ -1,10 +1,14 @@
-import { homeAction } from './homeAction';
+import { getHome, postHome } from './homeAction';
 
-// The all example's actions container
 export const homeActions = [
   {
-    path: '/example',
+    path: '/api/home',
     method: 'get',
-    action: homeAction,
+    action: getHome,
+  },
+  {
+    path: '/api/home',
+    method: 'post',
+    action: postHome,
   },
 ];
