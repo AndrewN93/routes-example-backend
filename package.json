@@ -2,10 +2,23 @@
   "name": "routes-example",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "ts-node src/index.ts",
+    "dev": "ts-node-dev --respawn src/index.ts",
+    "prod": "tsc --build"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Vadym Biliuk",
+  "license": "ISC",
+  "dependencies": {
+    "@koa/cors": "^3.0.0",
+    "dotenv": "^8.0.0",
+    "koa": "^2.7.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "@types/koa__cors": "^2.2.3"
+  }
 }
